@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.1.1">
+    
+    
+      
+        <title>Checkout - RBKmoney|docs</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-4ebe3f1d68.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-f6789307ff.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="../../livedemo/livedemo.css">
+    
+      <link rel="stylesheet" href="../../livedemo/loader.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="green" data-md-color-accent="lime">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="RBKmoney|docs" class="md-logo md-header-nav__button">
+          <img src="../../assets/images/logo_white.png">
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Интеграция
+                </span>
+              
+            
+            Checkout
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Поиск" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+              
+
+
+  
+
+
+  <a href="https://github.com/rbkmoney/docs" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+            
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    RBKmoney|docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/rbkmoney/docs" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Документация" class="md-nav__link">
+      Документация
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Интеграция
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Интеграция
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Checkout" class="md-nav__link md-nav__link--active">
+      Checkout
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tokenizer/" title="Tokenizer" class="md-nav__link">
+      Tokenizer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Справочники
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Справочники
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../refs/testcards/" title="Тестовые карты" class="md-nav__link">
+      Тестовые карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../api/" title="API reference" class="md-nav__link">
+      API reference
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Пример кода инициализации платежной формы" class="md-nav__link">
+    Пример кода инициализации платежной формы
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+                 <a href="https://github.com/rbkmoney/docs/edit/master/docs/integrations/checkout.md" title="Редактировать эту страницу" class="md-icon md-content__edit">edit</a>
+               
+              
+                
+                  <h1>Checkout</h1>
+                
+                <p>Платежная форма Checkout представляет собой готовое техническое решение, которое позволяет совершить платеж. Форма отдается с веб-серверов RBKmoney и открывается в iframe таким образом, чтобы создать для плательщика видимость нахождения на сайте мерчанта.</p>
+<h2 id="_1">Пример кода инициализации платежной формы<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://checkout.rbk.money/payframe/payframe.js&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;rbkmoney-checkout&quot;</span>
+        <span class="na">data-invoice-id</span><span class="o">=</span><span class="s">&quot;string&quot;</span>
+        <span class="na">data-invoice-access-token</span><span class="o">=</span><span class="s">&quot;string&quot;</span>
+        <span class="na">data-endpoint-success</span><span class="o">=</span><span class="s">&quot;https://&lt;your-server-side&gt;&quot;</span>
+        <span class="na">data-endpoint-success-method</span><span class="o">=</span><span class="s">&quot;GET&quot;</span>
+        <span class="na">data-endpoint-fail</span><span class="o">=</span><span class="s">&quot;https://&lt;your-server-side&gt;&quot;</span>
+        <span class="na">data-endpoint-fail-method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span>
+        <span class="na">data-name</span><span class="o">=</span><span class="s">&quot;Company name&quot;</span>
+        <span class="na">data-amount</span><span class="o">=</span><span class="s">&quot;7,700&quot;</span>
+        <span class="na">data-currency</span><span class="o">=</span><span class="s">&quot;Р&quot;</span>
+        <span class="na">data-logo</span><span class="o">=</span><span class="s">&quot;https://checkout.rbk.money/checkout/images/logo.png&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th align="center">data-* атрибут</th>
+<th>Описание</th>
+<th align="center">Обязательный</th>
+<th align="center">Возможные значения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">invoice id</td>
+<td>Идентификатор инвойса</td>
+<td align="center">✓</td>
+<td align="center"><code>oVU2LzUCbQ</code></td>
+</tr>
+<tr>
+<td align="center">invoice access token</td>
+<td>Токен для доступа к указанному инвойсу</td>
+<td align="center">✓</td>
+<td align="center"><code>eyJhbGciOiJSUzI1N...</code></td>
+</tr>
+<tr>
+<td align="center">endpoint success</td>
+<td>URL для отправки нотификации в случае успешного платежа</td>
+<td align="center"></td>
+<td align="center"><code>https://&lt;your-server-side&gt;</code></td>
+</tr>
+<tr>
+<td align="center">endpoint success method</td>
+<td>Тип Http метода для endpoint success</td>
+<td align="center"></td>
+<td align="center"><code>GET, POST (по-умолчанию)</code></td>
+</tr>
+<tr>
+<td align="center">endpoint fail</td>
+<td>URL для отправки нотификации в случае неуспешного платежа</td>
+<td align="center"></td>
+<td align="center"><code>https://&lt;your-server-side&gt;</code></td>
+</tr>
+<tr>
+<td align="center">endpoint fail method</td>
+<td>Тип Http метода для endpoint failed</td>
+<td align="center"></td>
+<td align="center"><code>GET, POST (по-умолчанию)</code></td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td>Метка для задания именования формы</td>
+<td align="center"></td>
+<td align="center"><code>Company name</code></td>
+</tr>
+<tr>
+<td align="center">amount</td>
+<td>Метка для вывода стоимости платежа</td>
+<td align="center"></td>
+<td align="center"><code>7,700</code></td>
+</tr>
+<tr>
+<td align="center">currency</td>
+<td>Метка для вывода валюты</td>
+<td align="center"></td>
+<td align="center"><code>P</code></td>
+</tr>
+<tr>
+<td align="center">logo</td>
+<td>URL для задания логотипа</td>
+<td align="center"></td>
+<td align="center"><code>https://&lt;your-server-side&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Примечание. Запросы на endpoint success, endpoint failed отправляются с <code>"Content-Type": "x-form-urlencoded"</code>.</p>
+              
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../overview/" title="Обзор" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Ранее
+                </span>
+                Обзор
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../tokenizer/" title="Tokenizer" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Далее
+                </span>
+                Tokenizer
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-30ac6a1727.js"></script>
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+      
+        <script src="../../livedemo/livedemo.js"></script>
+      
+        <script src="../../counters/ga.js"></script>
+      
+        <script src="../../counters/ym.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
